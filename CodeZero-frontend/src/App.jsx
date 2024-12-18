@@ -1,14 +1,27 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Navbar from './components/Navbar'
+import Hero from './Pages/Hero'
+import About from './Pages/About'
 import Meet from './components/Meet'
 
 const App=() =>{
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Navbar /> */}
-        <Meet />
+        <Navbar />
+      <div className="pages">
+        <Routes>
+          <Route
+            path='/'
+            element={<>
+            <Hero />
+            <About />
+            <Meet />
+            </>}
+          />
+        </Routes>
+      </div>
+        
       </BrowserRouter>
     </div>
   )
