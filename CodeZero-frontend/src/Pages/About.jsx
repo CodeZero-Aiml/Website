@@ -26,7 +26,7 @@ const About = () => {
         <p className="text-gray-400 text-center lg:text-left">and more..</p>
 
         <div className="flex flex-wrap justify-between gap-8 mt-10 w-full">
-          {/* DSA Section */}
+          
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 w-full sm:w-1/3 lg:w-1/3">
             <h2 className="text-white text-2xl mb-2">DSA</h2>
             <p className="text-gray-400 text-sm w-48 lg:w-full">
@@ -35,7 +35,7 @@ const About = () => {
             </p>
           </div>
 
-          {/* WebDev Section */}
+          
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 w-full sm:w-1/3 lg:w-1/3">
             <h2 className="text-white text-2xl mb-2">WebDev</h2>
             <p className="text-gray-400 text-sm w-48 lg:w-full">
@@ -44,7 +44,7 @@ const About = () => {
             </p>
           </div>
 
-          {/* Machine Learning Section */}
+          
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 w-full sm:w-1/3 lg:w-1/3">
             <h2 className="text-white text-2xl mb-2">Machine Learning</h2>
             <p className="text-gray-400 text-sm w-48 lg:w-full">
