@@ -9,10 +9,9 @@ const Hero = () => {
   const resizeHandler = () => {
     if (window.innerWidth < 760) {
       setVideoSrc(small);
-    } else if(window.innerWidth<=1024){
+    } else if (window.innerWidth <= 1024) {
       setVideoSrc(middle);
-    }
-    else{
+    } else {
       setVideoSrc(large);
     }
   };
@@ -30,11 +29,17 @@ const Hero = () => {
       style={{ backgroundImage: `url(${videoSrc})` }}
     >
       <div className="absolute inset-0 flex justify-center items-center flex-col bg-black bg-opacity-50">
-        <h2 className="text-white text-5xl mb-4 text-center">
-          Welcome to
+        <h2 className="text-5xl mb-4 text-center">
+          <span className="gradient-text">Welcome to</span>
         </h2>
-        <h2 className="text-white text-5xl text-center">CodeZero</h2>
-        <img src="/utils/robohi.jpg" alt="robot" className="h-44 relative top-20"/>
+        <h2 className="text-5xl text-center">
+          <span className="gradient-text">CodeZero</span>
+        </h2>
+        <img
+          src="/utils/robohi.jpg"
+          alt="robot"
+          className="h-44 relative top-20"
+        />
       </div>
     </section>
   );
