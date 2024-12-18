@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Navbar from './components/Navbar'
 import Hero from './Pages/Hero'
 import About from './Pages/About'
+import Meet from './components/Meet'
 
 const App=() =>{
   return (
@@ -16,10 +16,12 @@ const App=() =>{
             element={<>
             <Hero />
             <About />
+            <Meet />
             </>}
           />
         </Routes>
       </div>
+        
       </BrowserRouter>
     </div>
   )
