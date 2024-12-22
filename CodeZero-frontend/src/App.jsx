@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Hero from './Pages/Hero'
 import About from './Pages/About'
 import Meet from './components/Meet'
+import Footer from './components/Footer'
+import Discussion from './Pages/discussion'
 
 const App=() =>{
   return (
@@ -19,9 +21,13 @@ const App=() =>{
             <Meet />
             </>}
           />
+          <Route
+            path='/discussion'
+            element={<Discussion/>}
+          />
         </Routes>
       </div>
-        
+        <Footer />
       </BrowserRouter>
     </div>
   )
