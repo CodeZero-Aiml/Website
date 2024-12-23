@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.profile-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    background: linear-gradient(to right, #00bfff, #ffffff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold; 
+}
+
+.highlight {
+    color: #00bfff;
+}
+
+.edit-profile {
+    font-size: 12px;
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.edit-profile:hover {
+    color: #0080ff;
+    text-decoration: underline;
+}
+
+.grid-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 20px;
+    align-items: stretch; /* Ensures all cards stretch to equal height */
+}
+
+.left-container, .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    flex: 1; /* Ensures cards take equal height */
+    min-height: 150px; /* Optional: Sets a consistent minimum height */
+}
+
+.full-name {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.icon {
+    font-size: 24px; 
+    color: #00bfff; 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.links {
+    text-align: left;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.links a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #0080ff;
+}
+
+.links i {
+    font-size: 18px;
+    color: #00bfff;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .full-name {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .circle {
+        margin: 0 auto 10px auto;
+    }
+}
