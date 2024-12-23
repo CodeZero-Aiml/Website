@@ -5,6 +5,7 @@ import About from './Pages/About'
 import Meet from './components/Meet'
 import Footer from './components/Footer'
 import Discussion from './Pages/discussion'
+import Achievements from './Pages/Achievements'
 
 const App=() =>{
   return (
@@ -21,9 +22,15 @@ const App=() =>{
             <Meet />
             </>}
           />
+          
           <Route
             path='/discussion'
             element={<Discussion/>}
+          />
+
+          <Route
+            path='/achievement'
+            element={<Achievements/>}
           />
         </Routes>
       </div>
