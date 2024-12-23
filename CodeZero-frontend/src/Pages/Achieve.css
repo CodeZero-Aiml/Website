@@ -1,0 +1,202 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Navigation Links */
+.nav-links img.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Navigation and Profile Icon Adjustments */
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between items */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center elements when wrapped */
+}
+
+.nav-auth a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    cursor: pointer; /* Pointer cursor for clickable elements */
+}
+
+.nav-auth a:hover {
+    color: #00aaff;
+}
+
+/* Sign-in Button */
+.nav-auth .sign-in {
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-auth .sign-in:hover {
+    background-color: #00aaff;
+    color: #000;
+}
+
+/* Profile Icon */
+.nav-auth .profile-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-auth .profile-icon:hover {
+    transform: scale(1.1);
+    color: #00aaff;
+}
+
+/* Main Title */
+.title {
+    margin: 30px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #002b7a, #ffffff); /* Blue to white gradient from left to right */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show the gradient */
+}
+
+/* Grid Layout */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+    gap: 30px;
+    padding: 20px 200px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #333;
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 2px #00aaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%; /* Flexible width */
+    position: relative;
+    color: #aaa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 4px #00aaff;
+    cursor: pointer;
+}
+
+.box p {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+.box:hover p {
+    color: #00aaff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    header nav {
+        padding: 15px 20px; /* Reduce padding */
+    }
+
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        gap: 20px;
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .nav-auth {
+        flex-wrap: wrap;
+        justify-content: center; /* Center when wrapped */
+        gap: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+        padding: 10px 20px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .box {
+        height: 120px;
+        font-size: 12px; /* Reduce font size for better visibility */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links img.logo {
+        height: 40px; /* Smaller logo */
+    }
+
+    .nav-auth {
+        flex-direction: column; /* Stack vertically */
+        gap: 10px;
+    }
+
+    .achievement-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .box {
+        height: 100px;
+        font-size: 10px; /* Further reduce font size for better visibility on small screens */
+    }
+}

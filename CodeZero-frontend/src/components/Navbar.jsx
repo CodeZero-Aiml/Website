@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Events", href: "/" },
   { name: "Community", href: "/" },
-  { name: "Acievements", href: "/" },
+  { name: "Acievements", href: '/achievement' },
   { name: "Discussion", href: "/discussion" },
 ];
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className="hidden lg:flex lg:gap-x-8 lg:items-center lg:ml-auto">
             <Link to="/" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Events</Link>
             <Link to="/" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Community</Link>
-            <Link to="/" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Achievements</Link>
+            <Link to='/achievement' className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Achievements</Link>
             <Link to="/discussion" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Discussion</Link>
             <Link to="/">
               <button className="rounded bg-gray-100 py-1 px-4 ml-4">
