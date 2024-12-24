@@ -6,6 +6,8 @@ import Meet from './components/Meet'
 import Footer from './components/Footer'
 import Discussion from './Pages/discussion'
 import Achievements from './Pages/Achievements'
+import Login from './Pages/Login'
+
 
 const App=() =>{
   return (
@@ -31,6 +33,11 @@ const App=() =>{
           <Route
             path='/achievement'
             element={<Achievements/>}
+          />
+
+          <Route
+            path='/login'
+            element={<Login/>}
           />
         </Routes>
       </div>

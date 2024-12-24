@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link to="/" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Community</Link>
             <Link to='/achievement' className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Achievements</Link>
             <Link to="/discussion" className="text-sm font-semibold text-white hover:text-black hover:bg-white py-1 px-2 rounded">Discussion</Link>
-            <Link to="/">
+            <Link to="/login">
               <button className="rounded bg-gray-100 py-1 px-4 ml-4">
                 <span className="text-sm font-semibold text-gray-800">Sign up</span>
               </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </div>
                 <div className="py-6">
                   <Link
-                    to="/"
+                    to="/login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white hover:text-black"
                     onClick={() => setMobileMenuOpen(false)} // Close the menu after clicking the Sign up link
                   >
